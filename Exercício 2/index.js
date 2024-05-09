@@ -23,4 +23,4 @@ const limit = 4000000;
 const result = fibonacci(limit);
 
 //Exibir resultado no console
-console.log ("A soma de todos os números pares de Fibonacci até" + limit + "é" + result);
+console.log ("A soma de todos os números pares de Fibonacci até " + limit + " é " + result);
