@@ -16,5 +16,5 @@ function maiorNprimo(number) {
 const number = 600851475143;
 const maiorFator = maiorNprimo(number);
 
-//Mostra o resultado no console
+//Mostrar o resultado no console
 console.log("O resultado é", maiorFator);
