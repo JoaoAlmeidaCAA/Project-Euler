@@ -9,6 +9,7 @@ function divisivelPorTodos(numero) {
     return true;
 }
 
+// Looping para descobrir o menor número divisível por todos de 1 até 20
 let numero = 1;
 
 while (!divisivelPorTodos(numero)) {
