@@ -1,1 +1,2 @@
-//Função para achar o número primo 
+//Função para achar o número primo
+function acharNumPrimo (n) 
