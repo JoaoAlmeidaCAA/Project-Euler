@@ -1,30 +1,30 @@
 //Função para achar o número primo
 function acharNumPrimo (n) {
-    let limite = 150000; //Estimativa inicial para o limite superior 
-    let primo = Array(limite).fill(true);
-    primo[0] = primo[1] = false; //0 e 1 não são primos
+    const primos = [2];
+    let num = 3;
 
-    for ( let x = 2; x * x < limite; x++) {
-        if (primo[x]) {
-            for (let y = x * x; y < limite; y += x) {
-                primo[y] = false;
+    //Looping para continuar a execução até chegar ao número 10001
+    while (primos.length < n) {
+        let ePrimo = true;        
+        
+        //Percorrer o array dos primos para testar se é divisível 
+        for (let x = 0; x < primos.length; x++) {
+            if (primos[x] * primos[x] > num) {
+                break;
+            }
+            if (num % primos[x] === 0) {
+                ePrimo = false;
+                break;
             }
         }
-    }
-
-    // Coleta de todos os primos da lista
-    let primos = [];
-    for (let x = 2; x < limite; x++) {
-        if (primo[x]) {
-            primos.push(x);
+        //Se permanecer verdadeiro ápos o loop, significa que é primo, então é adicionado ao array "primos"
+        if (ePrimo) {
+            primos.push(num);
         }
+        num +=2;
     }
-
-    if (primos.length >= n) {
-        return primos[n - 1];
-    } else {
-        return 'Aumente o limite e tente novamente.';
-    }
+    //Retorna o resultado
+    return primos[n-1];
 }
-
-console.log(acharNumPrimo(10000));
+//Mostra o resultado no console 
+console.log(acharNumPrimo(10001));
