@@ -1,4 +1,4 @@
-//Função para iniciar o codico somando 
+//Criação do Array 
 function somaPrimos (limite) {
     let ePrimo = new Array(limite + 1).fill(true);
     ePrimo[0] = ePrimo[1] = false;
