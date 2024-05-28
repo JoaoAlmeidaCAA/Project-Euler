@@ -1,4 +1,4 @@
-// Localizar os multiplos de 3 e 5 abaixo de 1000
+// Localizar os multiplos de 3 ou 5 abaixo de 1000
 let multiplos = [];
 for (let x = 1; x < 1000; x++) {
     if ( x % 3 === 0 || x % 5 === 0){
