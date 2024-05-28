@@ -7,6 +7,7 @@ function maxProduct(length) {
 
     for (let x = 0; x <= numeroGrande.length - length; x++) {
         let produto = 1;
+        
         for(let y = 0; y < length; y++) {
             produto *= parseInt(numeroGrande[x + y]);
         }
