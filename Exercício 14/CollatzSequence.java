@@ -28,7 +28,7 @@ public class CollatzSequence {
             }
         }
         //Imprimindo resultado
-        System.out.println("O número inicil abaixo de um milhão que produz a sequência mais longa é:" + number);
+        System.out.println("O número inicial abaixo de um milhão que produz a sequência mais longa é:" + number);
         System.out.println("O comprimento da sequência é:" + maxLength);
     }
 
